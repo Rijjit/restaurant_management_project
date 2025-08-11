@@ -3,5 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Management System</title>
+    <title>{{restaurant_name}}</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+<body>
+<header class="navbar">
+    <h1 class="logo">logo</h1>
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Menu</a>
+        <a href="#">Orders</a>
+        <a href="#">Staff</a>
+    </nav>
+</header>
+<section class="welcome">
+    <h2>Welcome to the {{restaurant_name}}</h2>
+    <p>We are delighted to have you in {{restaurant_name}}.</p>
+    <a href="/api" class="btn"> View API</a>
+</section>
+</body>
+</html>
     
